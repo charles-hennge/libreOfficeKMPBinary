@@ -53,8 +53,10 @@ jobs:
       - name: Install/Upgrade libx11-dev, libxext-dev
         run: sudo apt-get install libx11-dev libxext-dev
 
-      - name: Install/Upgrade libice6-dev, libsm6-dev
-        run: sudo apt-get install libice6-dev libsm6-dev
+      - name: Install/Upgrade libice-dev
+        run: sudo apt-get install libice-dev
+
+       
         
 
       # - name: Setup Android NDK
