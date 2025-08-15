@@ -49,6 +49,10 @@ jobs:
 
       - name: Install/Upgrade nss/nspr
         run: sudo apt-get install libnss3-dev libnspr4-dev
+
+      - name: Install/Upgrade libx11-dev
+        run: sudo apt-get install libx11-dev
+        
         
 
       # - name: Setup Android NDK
