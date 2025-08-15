@@ -26,6 +26,9 @@ jobs:
           java-version: 17
           distribution: 'temurin'
 
+      - name: Install libcups2-dev
+        run: sudo apt-get update && sudo apt-get install -y libcups2-dev
+
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
       #   with:
