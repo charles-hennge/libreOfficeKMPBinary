@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: nttld/setup-ndk@v2
+      - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
           ndk-version: '25.2.9519653' 
