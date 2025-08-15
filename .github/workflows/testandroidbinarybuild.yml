@@ -41,6 +41,9 @@ jobs:
       - name: Install/Upgrade xsltproc
         run: sudo apt-get install xsltproc
 
+      - name: Install/Upgrade xmllint
+        run: sudo apt-get install xmllint
+
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
       #   with:
