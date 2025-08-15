@@ -32,6 +32,11 @@ jobs:
       - name: Install/Upgrade fontconfig
         run: sudo apt-get install libfontconfig1-dev
 
+      - name: Install/Upgrade gpref
+        run: sudo apt-get install gperf
+
+         
+
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
       #   with:
