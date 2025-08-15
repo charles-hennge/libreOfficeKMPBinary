@@ -47,6 +47,10 @@ jobs:
       - name: Install/Upgrade libkrb5-dev
         run: sudo apt-get install libkrb5-dev
 
+      - name: Install/Upgrade nss/nspr
+        run: sudo apt-get install libnss3-dev libnspr4-dev
+        
+
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
       #   with:
