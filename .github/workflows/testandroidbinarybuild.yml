@@ -62,6 +62,10 @@ jobs:
       - name: Install/Upgrade libxt-dev
         run: sudo apt-get install libxt-dev
 
+      - name: Install/Upgrade xsublim, etc
+        run: sudo apt-get install xsublim libglib2.0-0 mime-support libxext-dev libxrender-dev locales libxt-dev pkg-config libpcre3 gawk
+        
+
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
       #   with:
