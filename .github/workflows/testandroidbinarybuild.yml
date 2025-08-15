@@ -63,7 +63,7 @@ jobs:
         run: sudo apt-get install libxt-dev
 
       - name: Install/Upgrade needed xlibs, etc
-        run: sudo apt-get install libglib2.0-0 media-types mailcap libxrender-dev locales pkg-config libpcre3 gawk x11-dev
+        run: sudo apt-get install libglib2.0-0 media-types mailcap libxrender-dev locales pkg-config libpcre3 gawk libx11-dev
         
 
       # - name: Setup Android NDK
