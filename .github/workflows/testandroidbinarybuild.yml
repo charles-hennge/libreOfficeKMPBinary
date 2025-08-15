@@ -56,8 +56,8 @@ jobs:
       - name: Install/Upgrade libice-dev
         run: sudo apt-get install libice-dev
 
-       
-        
+      - name: Install/Upgrade libsm-dev
+        run: sudo apt-get install libsm-dev
 
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
