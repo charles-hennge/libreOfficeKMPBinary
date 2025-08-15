@@ -53,8 +53,8 @@ jobs:
       - name: Install/Upgrade libx11-dev, libxext-dev
         run: sudo apt-get install libx11-dev libxext-dev
 
-      - name: Install/Upgrade freebsd-glue, libbluetooth-dev, linux-headers-generic, linux-libc-dev
-        run: sudo apt-get install freebsd-glue libbluetooth-dev linux-headers-generic linux-libc-dev
+      - name: Install/Upgrade libice6, libsm6
+        run: sudo apt-get install libice6 libsm6
         
 
       # - name: Setup Android NDK
