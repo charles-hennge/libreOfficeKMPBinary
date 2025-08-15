@@ -35,7 +35,8 @@ jobs:
       - name: Install/Upgrade gpref
         run: sudo apt-get install gperf
 
-         
+      - name: Install/Upgrade libxslt1 dev
+        run: sudo apt-get install libxslt1-dev
 
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
