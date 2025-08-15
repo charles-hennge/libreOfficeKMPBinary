@@ -17,7 +17,7 @@ jobs:
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
-          ndk-version: '25.2.9519653' 
+          ndk-version: 'r27d' 
           link-to-sdk: true
 
       - name: Set up JDK 17
@@ -33,7 +33,7 @@ jobs:
           
 
       - name: Create Build Settings File
-        run: echo "# Android x86 (preferable if using an AVD Emulator)\n--with-distro=LibreOfficeAndroidX86\n--with-android-sdk=$HOME/Android/Sdk\n--with-android-ndk=$HOME/Android/Sdk/ndk/25.2.9519653" >>  autogen.input
+        run: echo "# Android x86 (preferable if using an AVD Emulator)\n--with-distro=LibreOfficeAndroidX86\n--with-android-sdk=$HOME/Android/Sdk\n--with-android-ndk=$HOME/Android/Sdk/ndk/27.3.13750724" >>  autogen.input
 
       - name: Build binary for Android
         run: |
