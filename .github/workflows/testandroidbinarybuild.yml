@@ -72,7 +72,7 @@ jobs:
         run: sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 
       - name: Install/Upgrade JUnit
-        run: sudo apt-get install junit
+        run: sudo apt-get install junit4
 
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
