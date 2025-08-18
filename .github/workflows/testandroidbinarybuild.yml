@@ -64,7 +64,9 @@ jobs:
 
       - name: Install/Upgrade needed xlibs, etc
         run: sudo apt-get install libglib2.0-0 media-types mailcap libxrender-dev locales pkg-config libpcre3 gawk libx11-dev libxrandr-dev
-        
+
+      - name: Install/Upgrade build essential
+        run: sudo apt-get install build-essential libgtk-3-dev
 
       # - name: Setup Android NDK
       #   uses: android-actions/setup-ndk@v2
