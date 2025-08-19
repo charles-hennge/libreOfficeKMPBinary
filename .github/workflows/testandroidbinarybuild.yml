@@ -93,6 +93,6 @@ jobs:
         with:
           name: android-libreoffice-binary # A meaningful name for your artifact
           path: |
-            ./libreoffice # Path to your build output directory
+            ./instdir/program/soffice # Path to your build output directory
             ./logs/*.log # Wildcard pattern for log files
           retention-days: 30
