@@ -88,6 +88,9 @@ jobs:
           ./autogen.sh
           make
 
+      - name: List All Built Files
+        run: sudo ls -al
+
       - name: Upload Build Results
         uses: actions/upload-artifact@v4 # Use the latest version of the action
         with:
