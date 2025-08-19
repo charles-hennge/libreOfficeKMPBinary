@@ -87,3 +87,12 @@ jobs:
         run: |
           ./autogen.sh
           make
+
+      - name: Upload Build Results
+        uses: actions/upload-artifact@v4 # Use the latest version of the action
+        with:
+          name: android-libreoffice-binary # A meaningful name for your artifact
+          path: |
+            ./libreoffice # Path to your build output directory
+            ./logs/*.log # Wildcard pattern for log files
+          retention-days: 30
