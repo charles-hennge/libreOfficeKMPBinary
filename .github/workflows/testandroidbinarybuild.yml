@@ -1,3 +1,4 @@
+
 name: Build Android Binaries
 
 on:
@@ -96,6 +97,5 @@ jobs:
         with:
           name: android-libreoffice-binary # A meaningful name for your artifact
           path: |
-            ./instdir/program/soffice # Path to your build output directory
-            ./logs/*.log # Wildcard pattern for log files
+            ${{ github.workspace }}/instsetoo_native/
           retention-days: 30
